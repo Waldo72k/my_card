@@ -16,10 +16,10 @@ class HomePage extends StatelessWidget {
                     .start, //Esta wea la cambias y se reordena / varia center y spaceevenly
                 children: <Widget>[
                   const SizedBox(
-                    height: 160,
+                    height: 150,
                   ),
                   const CircleAvatar(
-                    radius: 120,
+                    radius: 130,
                     backgroundImage:
                         AssetImage("assets/images/yatorabitepencilcut.jpg"),
                   ),
@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
                     height: 20,
                   ),
                   const Text(
-                    "Waldo, el cenit",
+                    "-Waldo Cenit T.-",
                     style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                     height: 20,
                   ),
                   const Text(
-                    "Wannabee de ingeniero.",
+                    "Flutter Developer",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -60,13 +60,25 @@ class HomePage extends StatelessWidget {
                     height: 50,
                     width: 320,
                     color: Colors.amber,
-                    child: const Text(
-                      "Texto de telefono",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "Playfair Display"),
+                    child: Row(
+                      children: const [
+                        Icon(
+                          Icons.phone,
+                          size: 30,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 40,
+                        ),
+                        Text(
+                          "646-160-69-69",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Playfair Display"),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(
@@ -77,13 +89,25 @@ class HomePage extends StatelessWidget {
                     height: 50,
                     width: 320,
                     color: Colors.amber,
-                    child: const Text(
-                      "Texto de mail",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "Playfair Display"),
+                    child: Row(
+                      children: const [
+                        Icon(
+                          Icons.mail_sharp,
+                          size: 30,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "oswaldo.zx20@gmail.com",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Playfair Display"),
+                        ),
+                      ],
                     ),
                   )
                 ],
